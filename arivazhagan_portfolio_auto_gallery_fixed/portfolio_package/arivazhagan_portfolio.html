@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Arivazhagan L — Video Editor & Graphic Designer</title>
+<style>
+:root{--bg:#101114;--panel:#191a1f;--panel2:#202127;--text:#f5f4f1;--muted:#b6b3bb;--accent:#f5d400;--line:#34343c;--radius:18px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 Inter,Segoe UI,Arial,sans-serif}a{color:inherit;text-decoration:none}.wrap{width:min(1160px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:#101114ed;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}nav{display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:72px;flex-wrap:wrap}.brand{font-weight:950;letter-spacing:.04em}.brand em{font-style:normal;color:var(--accent)}.navlinks{display:flex;gap:22px;flex-wrap:wrap;color:var(--muted);font-size:.92rem}.navlinks a:hover{color:var(--accent)}.btn{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#171614;font-weight:850;padding:11px 17px;border-radius:999px}.btn.ghost{background:transparent;color:var(--text);border:1px solid #666}.eyebrow{font-size:.75rem;font-weight:900;letter-spacing:.18em;text-transform:uppercase;color:var(--accent)}h1,h2,h3,p{margin-top:0}h1{font-size:clamp(3rem,7.8vw,6.4rem);line-height:.93;letter-spacing:-.065em;margin:16px 0 24px}h2{font-size:clamp(2rem,4vw,3rem);line-height:1.05;letter-spacing:-.04em;margin:12px 0 14px}.accent{color:var(--accent)}.lead{color:var(--muted);max-width:720px}.hero{padding:74px 0 65px;background:radial-gradient(ellipse at 80% 12%,#f5d40020,transparent 33%),linear-gradient(135deg,#15151a,#101114);border-bottom:1px solid var(--line)}.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:center}.hero p{max-width:680px;color:var(--muted)}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.portraitbox{padding:12px;border:1px solid #4b4530;border-radius:24px;background:linear-gradient(145deg,#292a2f,#17171c);position:relative}.portraitbox img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:15px;filter:saturate(.9)}.portraitcaption{padding:14px 8px 4px;display:flex;justify-content:space-between;gap:10px;align-items:center;color:var(--muted);font-size:.85rem}.pill{border:1px solid #4b4530;border-radius:100px;padding:5px 10px;color:var(--accent);font-size:.75rem;font-weight:800}
+section{padding:68px 0;border-bottom:1px solid var(--line)}.sectionhead{display:flex;align-items:end;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:26px}.sectionhead .lead{margin:0}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{border:1px solid var(--line);border-radius:var(--radius);background:var(--panel);padding:22px}.card h3{margin:8px 0 5px}.card p{color:var(--muted);font-size:.94rem;margin-bottom:0}.icon{font-size:1.5rem;color:var(--accent)}.timeline{display:grid;gap:14px}.job{display:grid;grid-template-columns:210px 1fr;gap:25px;padding:23px;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius)}.date{color:var(--accent);font-weight:900}.job h3{margin-bottom:4px}.job p{color:var(--muted);margin-bottom:0}.skills{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.skill{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:14px 17px;background:var(--panel);border:1px solid var(--line);border-radius:12px}.skill strong{font-size:.95rem}.skill span{font-size:.8rem;color:var(--muted)}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin:22px 0}.filter{background:var(--panel);border:1px solid var(--line);color:var(--muted);padding:8px 14px;border-radius:100px;cursor:pointer;font:inherit}.filter.active,.filter:hover{background:var(--accent);border-color:var(--accent);color:#151515;font-weight:800}.media-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.media-card{background:var(--panel);border:1px solid var(--line);border-radius:15px;overflow:hidden}.media-placeholder{aspect-ratio:16/9;background:linear-gradient(135deg,#30313a,#17171c);display:grid;place-items:center;color:#a5a5ad;text-align:center;padding:15px;position:relative}.media-placeholder::after{content:"▶";display:grid;place-items:center;border:1px solid #777;border-radius:50%;width:44px;height:44px;color:var(--accent);position:absolute;font-size:1.1rem;background:#10111488}.media-placeholder span{font-size:.72rem;letter-spacing:.12em;font-weight:900;opacity:.65}.media-card video,.media-card img{width:100%;display:block;aspect-ratio:16/9;object-fit:cover;background:#070708}.media-info{padding:14px}.media-info h3{font-size:1rem;margin:0 0 4px}.media-info p{font-size:.84rem;color:var(--muted);margin:0}.note{color:var(--muted);font-size:.82rem;margin-top:15px}.contact{background:radial-gradient(ellipse at 90% 20%,#f5d40018,transparent 42%),#121216}.contactgrid{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center}.contactinfo{display:grid;gap:12px}.contactinfo a{color:var(--accent);font-weight:750}.footer{padding:24px 0;color:var(--muted);font-size:.85rem;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+@media(max-width:800px){.hero-grid,.contactgrid{grid-template-columns:1fr}.portraitbox{max-width:380px}.cards,.media-grid{grid-template-columns:repeat(2,1fr)}.job{grid-template-columns:1fr;gap:8px}.hero{padding:50px 0}}@media(max-width:540px){.cards,.media-grid,.skills{grid-template-columns:1fr}.navlinks{gap:12px;font-size:.84rem}.hero-grid{gap:26px}.sectionhead{align-items:start}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav><a class="brand" href="#top">A<em>.</em> ARIVAZHAGAN</a><div class="navlinks"><a href="#about">About</a><a href="#experience">Experience</a><a href="#videos">Videos</a><a href="#designs">Designs</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div><a class="btn" href="#contact">Let's Talk ↗</a></nav></div></header>
+<main id="top">
+<section class="hero"><div class="wrap hero-grid"><div><div class="eyebrow">Video Editor · Graphic Designer</div><h1>EDIT.<br><span class="accent">DESIGN.</span><br>INSPIRE.</h1><p>Creative and detail-oriented Graphic Designer and Video Editor with a strong eye for visual storytelling. Experienced in producing engaging designs and dynamic video content for digital and print media—creating high-impact visuals that connect with audiences and meet project goals.</p><div class="actions"><a class="btn" href="#videos">View Video Work ↓</a><a class="btn ghost" href="#designs">Explore Designs</a></div></div><div class="portraitbox"><img src="images/profile.jpg" alt="Arivazhagan portrait"><div class="portraitcaption"><span>ARIVAZHAGAN L</span><span class="pill">Available for opportunities</span></div></div></div></section>
+<section id="about"><div class="wrap"><div class="eyebrow">About me</div><div class="sectionhead"><h2>Creative ideas.<br><span class="accent">Purposeful visuals.</span></h2><p class="lead">Design, editing, motion and storytelling—built to communicate.</p></div><div class="cards"><article class="card"><div class="icon">✦</div><h3>Graphic Design</h3><p>Marketing creatives, social content, print layouts, banners, flyers and branding assets.</p></article><article class="card"><div class="icon">▶</div><h3>Video Editing</h3><p>Event highlights, promotional edits, short-form reels, interview edits and campaign content.</p></article><article class="card"><div class="icon">◉</div><h3>Motion & Visuals</h3><p>Motion posters, animated titles, intros, outros and engaging visual transitions.</p></article></div></div></section>
+<section id="experience"><div class="wrap"><div class="eyebrow">Career</div><h2>Experience</h2><div class="timeline"><article class="job"><div><div class="date">2025 – 2026</div><strong>Video Editor</strong></div><div><h3>Trasol Technologies and Events Pvt Ltd · Tiruppur</h3><p>Worked on international event promotions and digital campaigns, creating visual content for major global exhibitions, including Forexpo Dubai, Crypto Expo Dubai, Money Expo Mexico, Money Expo Colombia, and Money Expo India.</p></div></article><article class="job"><div><div class="date">2024 – 2025</div><strong>Graphic Designer</strong></div><div><h3>Avinya Infotech Pvt. Ltd. · Namakkal</h3><p>Created marketing materials, social media creatives, and branding assets for various client projects.</p></div></article><article class="job"><div><div class="date">2022 – 2023</div><strong>2D Faculty</strong></div><div><h3>Arena Animation · Erode</h3><p>Trained students in 2D design principles, graphic tools, and animation fundamentals.</p></div></article><article class="job"><div><div class="date">2017 – 2018</div><strong>Graphic Designer</strong></div><div><h3>Velsha Technologies Pvt. Ltd. · Namakkal</h3><p>Created marketing materials, social media creatives, and branding assets for various client projects.</p></div></article></div></div></section>
+<section id="videos"><div class="wrap"><div class="eyebrow">Selected work · Video</div><div class="sectionhead"><h2>Video editing portfolio</h2><p class="lead">Browse by format or project type.</p></div><div class="filters" aria-label="Video filters"><button class="filter active" data-filter="all">All Videos</button><button class="filter" data-filter="reels">Reels</button><button class="filter" data-filter="motion">Motion Posters</button><button class="filter" data-filter="intro">Intro / Outro</button><button class="filter" data-filter="interviews">Interviews</button></div><div class="media-grid" id="videoGrid"><div class="loading">Scanning video folders…</div></div><p class="note">Videos are loaded automatically from the folders. Add or remove MP4 files, then refresh this page.</p></div></section>
+<section id="designs"><div class="wrap"><div class="eyebrow">Selected work · Graphic design</div><div class="sectionhead"><h2>Design showcase</h2><p class="lead">Artwork gallery—add your exported JPG, PNG or WebP designs.</p></div><div class="filters design-filters" id="designFilters"></div><div class="media-grid" id="designGrid"><div class="loading">Scanning design folders…</div></div><p class="note">JPG designs are automatically loaded from their category folders. Add or remove files, then refresh this page.</p></div></section>
+<section id="skills"><div class="wrap"><div class="eyebrow">Tools & software</div><h2>My toolkit</h2><div class="skills"><div class="skill"><strong>Photoshop</strong><span>Design & retouch</span></div><div class="skill"><strong>After Effects</strong><span>Motion graphics</span></div><div class="skill"><strong>Illustrator</strong><span>Vector artwork</span></div><div class="skill"><strong>DaVinci Resolve</strong><span>Video finishing</span></div><div class="skill"><strong>CorelDRAW</strong><span>Print design</span></div><div class="skill"><strong>CapCut</strong><span>Social video</span></div><div class="skill"><strong>Premiere Pro</strong><span>Video editing</span></div><div class="skill"><strong>AI Tools</strong><span>Creative workflow</span></div></div></div></section>
+<section id="contact" class="contact"><div class="wrap contactgrid"><div><div class="eyebrow">Let's work together</div><h2>Have a project?<br><span class="accent">Let's make it stand out.</span></h2><p class="lead">Open to video editing opportunities, graphic design projects, and creative collaborations.</p></div><div class="contactinfo"><div>Phone / WhatsApp: <a href="tel:+919488948143">+91 94889 48143</a></div><div>Email: <a href="mailto:arimat13@gmail.com">arimat13@gmail.com</a></div><div>Behance: <a href="https://www.behance.net/arivazhagan3" target="_blank" rel="noopener">behance.net/arivazhagan3 ↗</a></div><div>Instagram: <strong>@ARITENEntertainment</strong></div><div>YouTube: <strong>@ARITENEntertainment</strong></div><div><a class="btn" href="https://wa.me/919488948143" target="_blank" rel="noopener">Message on WhatsApp ↗</a></div></div></div></section>
+</main><footer><div class="wrap footer"><span>© 2026 Arivazhagan L · Video Editor & Graphic Designer</span><a href="#top">Back to top ↑</a></div></footer>
+<script>
+// Video section category filter buttons
+const filterButtons=document.querySelectorAll('.filter');
+const videoCards=document.querySelectorAll('#videoGrid .media-card');
+filterButtons.forEach(button=>button.addEventListener('click',()=>{
+  filterButtons.forEach(btn=>btn.classList.remove('active'));
+  button.classList.add('active');
+  const category=button.dataset.filter;
+  videoCards.forEach(card=>card.style.display=(category==='all'||card.dataset.category===category)?'':'none');
+}));
+</script>
+<style>
+.loading{grid-column:1/-1;padding:30px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:12px}.design-filters{margin-bottom:18px}.media-card .media-placeholder{display:none}.media-card img{width:100%;aspect-ratio:16/10;object-fit:contain;background:#09090b;cursor:zoom-in}.media-card video{width:100%;aspect-ratio:16/9;object-fit:contain;background:#050506}.design-card img{aspect-ratio:4/3;object-fit:contain}.lightbox{position:fixed;inset:0;background:#000e;z-index:100;display:flex;align-items:center;justify-content:center;padding:20px}.lightbox img{max-width:94vw;max-height:92vh;object-fit:contain}.lightbox button{position:absolute;top:20px;right:24px;background:#222;color:#fff;border:0;border-radius:30px;padding:10px 15px;cursor:pointer}
+</style>
+<script>
+(async function autoPortfolioGallery(){
+ const videoGrid=document.getElementById('videoGrid'), designGrid=document.getElementById('designGrid'), designFilters=document.getElementById('designFilters');
+ const videoCategories=[['reels','REELS'],['motion','MOTION POSTER'],['intro','INTRO OUTRO'],['interviews','INTERVIEWS']];
+ const designCategories=['BANNERS','BROUCHURE','FLYERS','POSTER DESIGN','PRODUCT LABEL DESIGN'];
+ function cardTitle(filename){return filename.replace(/\.[^.]+$/,'').replace(/[_-]+/g,' ').replace(/\b\w/g,c=>c.toUpperCase())}
+ function makeCard(title,desc,media,cls=''){
+  const card=document.createElement('article'); card.className='media-card '+cls;
+  const info=document.createElement('div'); info.className='media-info';
+  const h=document.createElement('h3'); h.textContent=title;
+  const p=document.createElement('p'); p.textContent=desc;
+  info.append(h,p); card.append(media,info); return card;
+ }
+ try{
+  const resp=await fetch('/api/gallery'); if(!resp.ok) throw new Error('Gallery API unavailable'); const data=await resp.json();
+  // Videos: display every MP4 in each video folder
+  videoGrid.innerHTML=''; let videosCount=0;
+  for(const [filter,folder] of videoCategories){
+   const items=data.videos[folder]||[];
+   for(const item of items){
+    videosCount++; const v=document.createElement('video'); v.controls=true; v.preload='metadata'; v.playsInline=true;
+    const source=document.createElement('source'); source.src=item.url; source.type='video/mp4'; v.append(source);
+    videoGrid.append(makeCard(cardTitle(item.name),folder.replace(/_/g,' '),v,'video-card')); 
+   }
+  }
+  if(!videosCount) videoGrid.innerHTML='<div class="loading">No MP4 videos found yet. Add files inside the videos subfolders.</div>';
+  // replace original filter buttons behavior to hide/show based on category labels
+  const filterButtons=document.querySelectorAll('#videos .filter');
+  filterButtons.forEach(btn=>btn.addEventListener('click',()=>{
+    filterButtons.forEach(b=>b.classList.remove('active')); btn.classList.add('active');
+    const selected=btn.dataset.filter;
+    document.querySelectorAll('#videoGrid .media-card').forEach(card=>{
+      const folder=card.querySelector('.media-info p')?.textContent.toUpperCase().trim();
+      const mapping={'reels':'REELS','motion':'MOTION POSTER','intro':'INTRO OUTRO','interviews':'INTERVIEWS'};
+      card.style.display=(selected==='all'||folder===mapping[selected])?'':'none';
+    });
+  }));
+  // Design gallery category filters
+  designGrid.innerHTML=''; designFilters.innerHTML=''; let designsCount=0;
+  const allBtn=document.createElement('button'); allBtn.className='filter active'; allBtn.textContent='All Designs'; allBtn.dataset.category='all'; designFilters.append(allBtn);
+  for(const folder of designCategories){
+   const btn=document.createElement('button'); btn.className='filter'; btn.textContent=folder; btn.dataset.category=folder; designFilters.append(btn);
+   for(const item of (data.designs[folder]||[])){
+    designsCount++; const img=document.createElement('img'); img.src=item.url; img.alt=item.name; img.loading='lazy';
+    img.addEventListener('click',()=>{const overlay=document.createElement('div');overlay.className='lightbox';const large=document.createElement('img');large.src=item.url;large.alt=item.name;const close=document.createElement('button');close.textContent='Close ✕';close.onclick=()=>overlay.remove();overlay.onclick=e=>{if(e.target===overlay)overlay.remove()};overlay.append(large,close);document.body.append(overlay)});
+    const c=makeCard(cardTitle(item.name),folder,img,'design-card'); c.dataset.folder=folder; designGrid.append(c);
+   }
+  }
+  allBtn.addEventListener('click',()=>{designFilters.querySelectorAll('button').forEach(b=>b.classList.remove('active'));allBtn.classList.add('active');designGrid.querySelectorAll('.media-card').forEach(c=>c.style.display='')});
+  designFilters.querySelectorAll('button:not([data-category="all"])').forEach(btn=>btn.addEventListener('click',()=>{designFilters.querySelectorAll('button').forEach(b=>b.classList.remove('active'));btn.classList.add('active');designGrid.querySelectorAll('.media-card').forEach(c=>c.style.display=c.dataset.folder===btn.dataset.category?'':'none')}));
+  if(!designsCount) designGrid.innerHTML='<div class="loading">No JPG designs found yet. Add JPG files inside the design subfolders.</div>';
+ }catch(err){videoGrid.innerHTML='<div class="loading">Could not scan folders. Please start the portfolio using START_PORTFOLIO.bat.</div>';designGrid.innerHTML='<div class="loading">Folder scanning requires the local server. Start using START_PORTFOLIO.bat.</div>';console.error(err)}
+})();
+</script>
+</body></html>
